@@ -12,8 +12,8 @@ import { metaData } from "./config";
 export const metadata: Metadata = {
     metadataBase: new URL(metaData.baseUrl),
     title: {
-        default: metaData.title,
-        template: `%s | ${metaData.title}`,
+        default: metaData.pageTitle,
+        template: `%s | ${metaData.pageTitle}`,
     },
     description: metaData.description,
     openGraph: {
@@ -81,7 +81,7 @@ export default function RootLayout({
                     enableSystem
                     disableTransitionOnChange
                 >
-                    <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[960px] w-full">
+                    <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-6 max-w-screen-lg w-full">
                         <Navbar />
                         {children}
                         <Footer />
