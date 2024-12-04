@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import type { ThemeProviderProps } from "next-themes/dist/types";
 import { MdOutlineLightMode } from "react-icons/md";
+import { MdOutlineDarkMode } from "react-icons/md";
 
 const storageKey = "theme-preference";
 
@@ -86,13 +87,11 @@ export const ThemeSwitch: React.FC = () => {
             onClick={toggleTheme}
             className="flex items-center justify-center transition-opacity duration-300 hover:opacity-90"
         >
-            <MdOutlineLightMode
-                className={`h-[35px] w-[35px] ${
-                    currentTheme === "dark"
-                        ? "text-[#D4D4D4]"
-                        : "text-[#1c1c1c]"
-                }`}
-            />
+            {currentTheme === "light" ? (
+                <MdOutlineDarkMode className="h-[35px] w-[35px] text-[#1c1c1c]" />
+            ) : (
+                <MdOutlineLightMode className="h-[35px] w-[35px] text-[#D4D4D4]" />
+            )}
         </button>
     );
 };
