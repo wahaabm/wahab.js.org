@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { socialLinks } from "./config";
 import TechStack from "./components/tech-stack";
+import Expertise from "./components/expertise";
+import Contact from "./components/contact";
 export default function Page() {
     return (
         <>
@@ -18,10 +20,10 @@ export default function Page() {
                 </a>
 
                 <h1 className="mb-8 text-3xl font-medium tracking-tight">
-                    Who Am I?
+                    Who Am I
                 </h1>
 
-                <div className="prose prose-bold prose-xl dark:prose-invert space-y-0">
+                <div className="prose prose-bold prose-lg dark:prose-invert space-y-0">
                     <p
                         className="flex"
                         style={{
@@ -73,6 +75,8 @@ export default function Page() {
                 </div>
             </section>
             <TechStack />
+            <Expertise />
+            <Contact />
         </>
     );
 }
