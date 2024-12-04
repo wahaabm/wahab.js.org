@@ -3,16 +3,14 @@ export const metaData = {
     title: "Wahab Malik",
     pageTitle: "Wahab",
     name: "Wahab",
-    ogImage: "/opengraph-image.png",
     //TODO: change it
-    description:
-        "A clean, fast, and lightweight portfolio template built with Next.js, Vercel, and Tailwind CSS for optimal performance.",
+    description: "Wahab's personal portfolio website.",
 };
 
 export const socialLinks = {
     twitter: "https://x.com/1tssirius",
-    github: "https://github.com/1msirius/Nextfolio",
+    github: "https://github.com/wahabmalik414",
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/",
-    email: "mailto:example@gmail.com",
+    email: "mailto:wahaabm4@gmail.com",
 };
