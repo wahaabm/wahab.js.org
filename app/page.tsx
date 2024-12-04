@@ -11,7 +11,7 @@ export default function Page() {
                     <Image
                         src="/profile.png"
                         alt="Profile photo"
-                        className="rounded-3xl bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0"
+                        className="rounded-3xl block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5"
                         unoptimized
                         width={170}
                         height={170}
