@@ -21,15 +21,30 @@ export function Navbar() {
                     </Link>
                 </div>
                 <div className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center">
-                    {Object.entries(navItems).map(([path, { name }]) => (
-                        <Link
-                            key={path}
-                            href={path}
-                            className="text-2xl transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative"
-                        >
-                            {name}
-                        </Link>
-                    ))}
+                    {Object.entries(navItems).map(([path, { name }]) => {
+                        if (path === "/resume") {
+                            // For the resume link, use an anchor tag with download attribute
+                            return (
+                                <a
+                                    key={path}
+                                    href="/wahab-resume.pdf" // Path to your PDF file in the public folder
+                                    download
+                                    className="text-2xl transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative"
+                                >
+                                    {name}
+                                </a>
+                            );
+                        }
+                        return (
+                            <Link
+                                key={path}
+                                href={path}
+                                className="text-2xl transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative"
+                            >
+                                {name}
+                            </Link>
+                        );
+                    })}
                     <ThemeSwitch />
                 </div>
             </div>
