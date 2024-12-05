@@ -8,7 +8,7 @@ export const metaData = {
 };
 
 export const socialLinks = {
-    github: "https://github.com/wahabmalik414",
+    github: "https://github.com/wahaabm",
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/",
     email: "mailto:wahaabm4@gmail.com",
