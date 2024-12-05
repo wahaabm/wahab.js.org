@@ -9,7 +9,7 @@ export default function Page() {
             <section>
                 <a href={socialLinks.github} target="_blank">
                     <Image
-                        src="/profile.png"
+                        src="./profile.png"
                         alt="Profile photo"
                         className="rounded-3xl block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5"
                         unoptimized
