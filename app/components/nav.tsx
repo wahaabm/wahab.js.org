@@ -5,7 +5,7 @@ import { metaData } from "../config";
 const navItems = {
     // "/blog": { name: "Blog" },
     // "/projects": { name: "Projects" },
-    "/resume": { name: "Resume" },
+    // "/resume": { name: "Resume" },
 };
 
 export function Navbar() {
@@ -21,7 +21,7 @@ export function Navbar() {
                     </Link>
                 </div>
                 <div className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center">
-                    {Object.entries(navItems).map(([path, { name }]) => {
+                    {/* {Object.entries(navItems).map(([path, { name }]) => {
                         if (path === "/resume") {
                             // For the resume link, use an anchor tag with download attribute
                             return (
@@ -44,7 +44,7 @@ export function Navbar() {
                                 {name}
                             </Link>
                         );
-                    })}
+                    })} */}
                     <ThemeSwitch />
                 </div>
             </div>
