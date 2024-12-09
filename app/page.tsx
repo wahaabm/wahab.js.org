@@ -7,7 +7,7 @@ export default function Page() {
     return (
         <>
             <section>
-                <a href={socialLinks.github} target="_blank">
+                {/* <a href={socialLinks.github} target="_blank">
                     <Image
                         src="./profile.png"
                         alt="Profile photo"
@@ -17,7 +17,7 @@ export default function Page() {
                         height={170}
                         priority
                     />
-                </a>
+                </a> */}
 
                 <h1 className="mb-8 text-3xl font-medium tracking-tight text-center md:text-left">
                     Who Am I
